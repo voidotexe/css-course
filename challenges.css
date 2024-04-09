@@ -15,6 +15,59 @@ body {
 
 .main-content {
   border: 5px solid black;
+  position: relative;
+  top: 30px;
+}
+
+.main-content::before {
+  content: "SALE";
+  position: absolute;
+  top: -18px;
+  left: -30px;
+  background-color: #ff5f5f;
+  color: #fff;
+  padding: 5px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.colors {
+  margin-bottom: 30px;
+}
+
+.color {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.color:last-child {
+  margin-right: 0;
+}
+
+.color-1 {
+  background-color: black;
+}
+
+.color-2 {
+  background-color: blue;
+}
+
+.color-3 {
+  background-color: red;
+}
+
+.color-4 {
+  background-color: orange;
+}
+
+.color-5 {
+  background-color: green;
+}
+
+.color-6 {
+  background-color: brown;
 }
 
 .shoes-name {
@@ -40,8 +93,9 @@ body {
   margin-bottom: 10px;
 }
 
-.product-details {
-  margin-top: 30px;
+a:link {
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
 a:hover {
